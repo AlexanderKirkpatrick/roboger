@@ -20,3 +20,11 @@ function inputArray (number) {
       return element;
     }
   }
+
+  function userResponse (number) {
+    const robogerInputArray = inputArray (number);
+    const robogerOutputArray = robogerInputArray.map (function(element) {
+      return numberSwap (element);
+    })
+    return robogerOutputArray;
+  }
