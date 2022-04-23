@@ -14,4 +14,4 @@ Describe: userResponse
 
 Test Three: It should take the new elements and put them into the array
 Code: userResponse (2);
-Expected Result: 0, 1, "boop!"
+Expected Result: 0, "beep!", "boop!"
