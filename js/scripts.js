@@ -28,3 +28,16 @@ function inputArray (number) {
     })
     return robogerOutputArray;
   }
+
+$(document).ready (function() {
+  $("form#numberPlease").submit(function (event) {
+    event.preventDefault();
+
+    const userInput = parseInt($("input#user-input").val());
+    
+    if (userInput) {
+      result = userResponse(userInput).join(", ");
+    }
+      $("#results").text(result);
+  });
+});
